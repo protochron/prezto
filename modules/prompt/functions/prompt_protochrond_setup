@@ -76,11 +76,7 @@ function prompt_protochron_setup {
 
   # ruby version
   zstyle ':prezto:module:ruby:info:version' format '<%v>'
-  # Define prompts.
-  #PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
-  #╰─%B$%b "
-  #
-  PROMPT=$'╭─[%n@%m]  %F{cyan}${_prompt_protochron_pwd}%f${git_info:+${(e)git_info[prompt]}}%(!. %B%F{red}#%f%b.) %F{red}$ruby_info[version]%f\n╰─${editor_info[keymap]} '
+  PROMPT=$'[${EC2_ACCOUNT}:${FIELDS_STAGE}]  %F{cyan}${_prompt_protochron_pwd}%f${git_info:+${(e)git_info[prompt]}} %F{red}$ruby_info[version]%f\n%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
   RPROMPT='${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }
