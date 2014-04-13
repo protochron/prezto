@@ -35,7 +35,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'ruby' \
-  'pacman' \
+  'osx' \
+  'syntax-highlighting' \
   'prompt'
 
 #
