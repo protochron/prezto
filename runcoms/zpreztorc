@@ -37,7 +37,8 @@ zstyle ':prezto:load' pmodule \
   'ruby' \
   'osx' \
   'syntax-highlighting' \
-  'prompt'
+  'prompt' \
+  #'gpg'
 
 #
 # Editor
